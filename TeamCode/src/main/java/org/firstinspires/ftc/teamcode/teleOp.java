@@ -17,7 +17,7 @@ public class teleOp extends LinearOpMode {
     public DcMotor clawWrist;
     public DcMotor clawArm;
 
-    public Servo droneLauncher;
+    public Servo airplaneLauncher;
 
     @Override
     public void runOpMode() {
@@ -40,7 +40,7 @@ public class teleOp extends LinearOpMode {
         clawArm = hardwareMap.get(DcMotor.class, "clawArm");
 
         // airplaneLauncher?!!!
-        droneLauncher = hardwareMap.get(Servo.class, "airplaneLauncher");
+        airplaneLauncher = hardwareMap.get(Servo.class, "airplaneLauncher");
         
 
         waitForStart();
