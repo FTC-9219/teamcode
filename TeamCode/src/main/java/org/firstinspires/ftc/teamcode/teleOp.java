@@ -17,7 +17,7 @@ public class teleOp extends LinearOpMode {
     public DcMotor clawWrist;
     public DcMotor clawArm;
 
-    public Servo airplaneLauncher;
+   // public Servo airplaneLauncher;
 
     @Override
     public void runOpMode() {
@@ -40,7 +40,7 @@ public class teleOp extends LinearOpMode {
         clawArm = hardwareMap.get(DcMotor.class, "clawArm");
 
         // airplaneLauncher?!!!
-        airplaneLauncher = hardwareMap.get(Servo.class, "airplaneLauncher");
+       // airplaneLauncher = hardwareMap.get(Servo.class, "airplaneLauncher");
         
 
         waitForStart();
@@ -152,13 +152,11 @@ public class teleOp extends LinearOpMode {
             if (gamepad2.right_stick_x == -1) {
                 clawGrabber.setPosition(-1);
             }
-            if (gamepad2.y) {
-                airplaneLauncher.setPosition(-1);
+          //  if (gamepad2.y) {
+            //    airplaneLauncher.setPosition(-1);
             }
-            if (gamepad2.x) {
-                airplaneLauncher.setPosition(0);
+         //   if (gamepad2.x) {
+               //  airplaneLauncher.setPosition(0);
             }
         }
-
-    }
 }
