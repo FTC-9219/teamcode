@@ -153,10 +153,10 @@ public class teleOp extends LinearOpMode {
                 clawGrabber.setPosition(-1);
             }
             if (gamepad2.y) {
-                droneLauncher.setPosition(-1);
+                airplaneLauncher.setPosition(-1);
             }
             if (gamepad2.x) {
-                droneLauncher.setPosition(0);
+                airplaneLauncher.setPosition(0);
             }
         }
 
